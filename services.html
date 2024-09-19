@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>KMK Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="navigation w3-metro-light-blue w3-container">
+        <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+        <nav class="nav-container">
+            <div class="logo w3-padding-large">
+                <a href="index.html" title="HOME"><img src="/images/kmk-logo.png" alt="LOGO" class="logo" /></a>
+            </div>
+            <div class="mobile-button">
+                <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+            </div>
+            <div class="links">
+                <a href="about-us.html">ABOUT</a>
+                <a href="services.html">SERVICE</a>
+                <a href="index.html#projects">PROJECTS</a>
+                <a href="index.html#contact-us">CONTACT</a>
+            </div>
+            <div id="mobile-sidenav" class="mobile-links w3-sand">
+                <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+                <a href="about-us.html" onclick="toggleMobileNavigation()">ABOUT</a>
+                <a href="#" onclick="toggleMobileNavigation()">SERVICES</a>
+                <a href="index.html#projects" onclick="toggleMobileNavigation()">PROJECTS</a>
+                <a href="index.html#contact-us" onclick="toggleMobileNavigation()">CONTACT</a>
+            </div>
+        </nav>
+    </section>
+
+    <section id="consulting" class="w3-container container consulting content">
+        <h2 style="text-align: center;">- OUR SERVICES -</h2>
+        <p>
+            KMK-Resources has experienced and skilled management team and workforce that adopts a collaborative and
+            hands- on approach to our relationships, delivering safe, high-quality products and services that respond to
+            clients and industry.
+            Our experience in the construction industry has enabled us to offer
+        </p>
+        <div class="c-card w3-margin-top">            
+            <div class="row">
+                <div class="column">
+                    <img src="/images/service-building-contracts.jpeg" alt="building contract service" class="icons-medium" />
+                </div>    
+                <div class="column">
+                    Building <br> Contracts
+                </div>
+            </div>
+        </div>
+        <div class="c-card c-card-right w3-margin-top">
+            <div class="row">
+                <div class="column">
+                    <img src="/images/service-concrete-work.png" alt="concrete works service" class="icons-medium" />
+                </div>
+                <div class="column">
+                Concrete <br> Works
+                </div>
+            </div>
+        </div>
+        <div class="c-card w3-margin-top">        
+            <div class="row">
+                <div class="column">
+                    <img src="/images/service-plant-scaffolding-hire.png" alt="plant scaffolding hire service" class="icons-medium"/>
+                </div>
+                <div class="column">
+                    Plant <br> Scaffolding <br> Hire
+                </div>
+            </div>
+        </div>
+        <div class="c-card  c-card-right w3-margin-top">
+            <div class="row">
+                <div class="column">
+                    <img src="/images/service-property-development.png" alt="property development service" class="icons-medium"/>
+                </div>
+                <div class="column">
+                    Property <br> Development
+                </div>
+            </div>
+        </div>
+        <div class="c-card w3-margin-top">
+            <div class="row">
+                <div class="column">
+                    <img src="/images/service-public-private-partnerships.jpeg" alt="pubicprivate partnership service" class="icons-medium"/>
+                </div>
+                <div class="column">
+                    Public <br> Private <br>  Partnership
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w3-container footer">
+      <br><br>
+      <div class="w3-small contact-info">                     
+          <span style="margin-left:10px;">
+            <a href="#contact-us-form" title="mailto:info.kmk.resources@gmail.com"><i class="fa fa-envelope"></i></a>
+            info.kmk.resources@gmail.com
+          </span> 
+          <br>
+          <span style="margin-left:10px;">
+            <i class="fa fa-phone-square"></i>
+            +243980470799, +243835029423, +27826385828                 
+          </span>           
+          <br>          
+        </div>          
+    </section>
+
+
+    <script async>
+        const backToTop = document.getElementById("back-to-top");
+
+      function toggleMobileNavigation() {
+        const mobileNavigation = document.getElementById("mobile-sidenav");
+        mobileNavigation.classList.toggle('mobile-links-active');
+      }
+
+      function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function scroll() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) backToTop.style.display = "block";
+        else backToTop.style.display = "none";
+      }
+
+      window.onscroll = function() {scroll()};
+    </script>
+    <script async>
+        let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+</body>
+
+</html>
