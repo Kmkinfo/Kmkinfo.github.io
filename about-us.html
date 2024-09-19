@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>KMK Resources - about us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body> 
+
+    <section class="navigation w3-metro-light-blue w3-container">
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+      <nav class="nav-container">
+        <div class="logo w3-padding-large"> 
+          <a href="index.html" title="HOME"><img src="/images/kmk-logo.png" alt="LOGO" class="logo" /></a>
+        </div>
+        <div class="mobile-button">
+          <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+        </div>
+        <div class="links">
+          <a href="#" >ABOUT</a>
+          <a href="services.html" >SERVICE</a>
+          <a href="index.html#projects">PROJECTS</a>
+          <a href="index.html#contact-us" >CONTACT</a>            
+        </div>
+        <div id="mobile-sidenav" class="mobile-links w3-sand">
+          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+          <a href="about-us.html" onclick="toggleMobileNavigation()">ABOUT</a>
+          <a href="services.html" onclick="toggleMobileNavigation()">SERVICES</a>
+          <a href="index.html#projects" onclick="toggleMobileNavigation()">PROJECTS</a>
+          <a href="index.html#contact-us" onclick="toggleMobileNavigation()">CONTACT</a>
+        </div>
+      </nav>
+    </section>
+    <section class="about w3-padding-large w3-container" id="about">
+      <div class="content container w3-round-large">
+        
+        <h2 style="text-align: center;">- ABOUT US -</h3>
+        <p>
+            KMK-Resources Sarl is a private, management-owned business that is evolving into a successful, sustainable, multi-disciplined, and reputable construction company, registered in RSA and DRC Congo, currently operating in the Mining province of Lualaba.
+            We have a reputation for quality, reliability, safety and exceeding clients’ expectations within budget and is able to negotiate projects every year as a result.
+            We are open to partnering with non-DRC businesses, investors, companies in order to be able to execute any public or private projects across numerous sectors in the DRC Congo.
+            We make it happen and we do it with our heart in it. 
+            We live and breathe infrastructure development.
+        </p>
+      </div>
+
+      <div class="leadership content container w3-margin-top w3-round-large">
+        <h3 style="text-align: center;">- Leadership -</h3>        
+        <div class="l-cards">
+          <div class="l-card">
+            <div class="circular-portrait">
+              <img src="/images/Koko-kasongo-profile.jpeg" alt="koo kasongo profile photo"/>
+            </div>
+            <h4><strong>Koko kasongo</strong></h4>
+            <p style="margin-top: 0 !important;">CO-FOUNDER & CEO</p>
+            <div class="icons">
+              <a href="" target="_blank"><span><i class="fa fa-facebook-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-linkedin-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-address-card"></i></a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="l-card">
+            <div class="circular-portrait">
+              <img src="https://spaces.w3schools.com/images/OQ6DP54awvw.jpg" alt="Photo by Remi Turcotte | Unsplash"/>
+            </div>
+            <h4><strong>Joe Doe</strong></h4>
+            <p style="margin-top: 0 !important;">CO-FOUNDER & CEO</p>
+            <div class="icons">
+              <a href="" target="_blank"><span><i class="fa fa-facebook-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-linkedin-square"></i></a>
+              <a href="" target="_blank"><span><i class="fa fa-address-card"></i></a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials w3-container w3-panel" style="padding: 50px;">
+      <h2 style="text-align: center;">- Some of our customer stories -</h2>
+      <div class="slideshow-container">
+
+      <div class="mySlides">
+        <p><q><em>The team at CONSULTCORP boosted my business by 500% in only 6 months! Their expertise helped me and my business to grow beyond what I thought it is possible.</em></q></p>
+        <p class="author"><strong>- John Keats, Founder of COMPANY-X</strong></p>
+      </div>
+
+      <div class="mySlides">
+        <p><q><em>CONSULTCORP helped me launch my idea in only 3 months! If there was not for CONSULTCORP team, I would probably not succeed.</em></q></p>
+        <p class="author"><strong>- Anne Johnson, Founder of COMPANY-Y</strong></p>
+      </div>
+
+      <div class="mySlides">
+        <p><q><em>The team at CONSULTCORP will help you steer your idea in the right direction, reducing all the risks you might encounter on your own! They surely did mine.</em></q></p>
+        <p class="author"><strong>- Dean Doe, Founder of COMPANY-Z</strong></p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>      
+    </section>
+    <section class="w3-panel w3-container content why-us" style="padding: 50px;">
+      <h2 style="text-align: center;">- Why choose us? -</h2>
+      <div class="container boxes">
+        <div class="box w3-round-large">
+          More than 25 years of experience
+        </div>
+        <div class="box w3-round-large">
+          Over 200 of consultations
+        </div>
+        <div class="box w3-round-large">
+          Over 35 happy clients
+        </div>
+        <div class="box w3-round-large">
+          100% reliable
+        </div>        
+      </div>
+    </section>
+    
+    <section class="w3-container footer">
+      <br><br>
+      <div class="w3-small contact-info">                     
+          <span style="margin-left:10px;">
+            <a href="#contact-us-form" title="mailto:info.kmk.resources@gmail.com"><i class="fa fa-envelope"></i></a>
+            info.kmk.resources@gmail.com
+          </span> 
+          <br>
+          <span style="margin-left:10px;">
+            <i class="fa fa-phone-square"></i>
+            +243980470799, +243835029423, +27826385828                 
+          </span>           
+          <br>          
+        </div>          
+    </section>
+
+
+  <script async>
+      const backToTop = document.getElementById("back-to-top");
+
+      function toggleMobileNavigation() {
+        const mobileNavigation = document.getElementById("mobile-sidenav");
+        mobileNavigation.classList.toggle('mobile-links-active');
+      }
+
+      function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function scroll() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) backToTop.style.display = "block";
+        else backToTop.style.display = "none";
+      }
+
+      window.onscroll = function() {scroll()};
+  </script>
+  <script async>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+  </script>
+  </body>
+</html> 
